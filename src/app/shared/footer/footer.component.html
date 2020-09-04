@@ -1,0 +1,69 @@
+<div class="container fixed-bottom colorBody1">
+  <div class="container text-center colorNavbar2">
+
+    <button (click)="privacidad()" type="button" class="btn btn-warning btn-sm cookies8 mt-n1">
+      <u>Politica de privacidad y Cookies</u>
+    </button>
+
+    <div class="row">
+      <div class="col">
+        <a (click)="whatsApp()" class="cursor7">
+          <i class="fab fa-whatsapp mr-3 ml-3"></i>
+        </a>
+        <a href="https://www.facebook.com/gbrl2791" target="_blank">
+          <i class="fab fa-facebook mr-3"></i>
+        </a>
+        <a href="mailto:gbmres2704@gmail.com" target="_blank">
+          <i class="fas fa-envelope mr-3"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <i class="fab fa-linkedin-in mr-3"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram mr-3"></i>
+        </a>
+        <a href="https://www.twitter.com/gabo2791" target="_blank">
+          <i class="fab fa-twitter mr-3"></i>
+        </a>
+      </div>
+    </div>
+    <p class="mb-1">
+      <small class="text-muted colorName3">
+        Copyright &copy;&nbsp;Federica Daniela Jimenez ({{year}})&nbsp;Todos los derechos reservados.
+
+      </small>
+    </p>
+  </div>
+</div>
+
+<!-- Modal Privacidad -->
+<div class="modal fade mt-5 py-5" id="privacidad" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content colorModal11">
+      <div class="container backModal12">
+        <div class="modal-body text-center colorTexto10">
+          <h4 class="colorName3 text-uppercase mb-4">
+            <u>Política de privacidad y Cookies</u>
+          </h4>
+          <p class="font-weight-light text-justify">
+            En esta sección debe aparecer la política de privacidad de la compañía, así como las cookies que se generan al ejecutar este sitio web
+            en el dispositivo del cliente. Cualquier alteración a la misma se encuentra tipificado de acuerdo a los estatuos previstos en el código
+            penal de la federación.
+            </p>
+            <div class="container text-center">
+              <button *ngIf="modalService.privacidad" (click)="salir()" class="btn btn-outline-warning colorName3"
+                type="button">
+                <i class="fas fa-check"></i>
+              </button>
+              <button *ngIf="!modalService.privacidad" (click)="irAlerta()" class="btn btn-outline-warning colorName3"
+                type="button">
+                <i class="fas fa-check"></i>
+              </button>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
