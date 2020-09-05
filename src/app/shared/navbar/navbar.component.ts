@@ -89,6 +89,7 @@ export class NavbarComponent implements OnInit {
   // tslint:disable-next-line: typedef
   logOut(){
     this.modalService.logOut();
+    this.cerrarNavbar();
     const Toast = Swal.mixin({
       toast: true,
       position: 'top',

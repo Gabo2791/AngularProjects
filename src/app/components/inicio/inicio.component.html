@@ -1,1 +1,140 @@
-<p>inicio works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="text-uppercase font-weight-bold text-left">
+        <span class="badge badge-warning">Un poco sobre mí</span>
+
+      </h3>
+      <div class="container mt-3">
+        <div class="container backPortada18">
+          <div class="card backSobreMi19">
+            <div class="row no-gutters">
+              <div class="col-md-4 backYo21 mt-1">
+                <img (click)="yoMostrar()" *ngIf="mostrarYo" src="../../../assets/img/4a.jpg"
+                  class=" card-img cursor7 padin20">
+                <img (click)="yoMostrar()" *ngIf="!mostrarYo" src="../../../assets/img/8a.jpg"
+                  class="card-img cursor7 padin20">
+              </div>
+
+              <div class="col-md-4 text-center">
+                <div class="card-body">
+                  <h5 class="card-title backTitulo22 mt-1">Federica Daniela Jiménez
+                  </h5>
+                  <p class="card-text">
+                    Desarrolladora Web
+                  </p>
+                  <div (click)="tecnologias()" class="container backTec23 cursor7">
+                    <p class="colorName3">
+                      <span class="badge badge-warning text-uppercase">tecnologías destacadas</span>
+                    </p>
+                    <div class="row">
+                      <div class="col">
+                        <img src="../../../assets/img/angular.png" class="tamanoTec24">
+                        <h6 class="mt-0 mb-1"><small class="colorTec25 text-uppercase">
+                            <strong>Angular</strong>
+                          </small></h6>
+                      </div>
+                      <div class="col">
+                        <img src="../../../assets/img/node.png" class="tamanoTec24">
+                        <h6 class="mt-0 mb-1"><small class="colorTec25 text-uppercase">
+                            <strong>NodeJs</strong>
+                          </small></h6>
+                      </div>
+                      <div class="col">
+                        <img src="../../../assets/img/boot.png" class="tamanoTec24">
+                        <h6 class="mt-0 mb-1"><small class="colorTec25 text-uppercase">
+                            <strong>Bootstrap</strong>
+                          </small></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <button (click)="sobreMi()" type="button" class="btn btn-outline-warning btn-sm mt-4">
+                    <span class="badge badge-warning">Leer más</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-md-4 backYo21 mt-1">
+                <img (click)="yoMostrar()" *ngIf="mostrarYo" src="../../../assets/img/5a.jpg"
+                  class="card-img cursor7 padin20">
+                <img (click)="yoMostrar()" *ngIf="!mostrarYo" src="../../../assets/img/9a.jpg"
+                  class="card-img cursor7 padin20">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="colorName3 text-uppercase font-weight-bold mt-5 text-left">
+    <span class="badge badge-warning">Últimas publicaciones</span>
+  </h3>
+  <div (click)="mostrarNoticia()" class="container text-center mt-3 cursor7">
+    <ul class="list-unstyled backUltimas28 pt-4 pl-4 pr-4 mt-1 text-justify">
+      <li class="backNoti32 mb-4" data-toggle="tooltip" data-placement="top" title="ABRIR">
+        <div class="media-body">
+          <h6 class="mb-1">
+            <img src="../../../assets/img/1.jpg" class="tamanoYo29 rounded-circle mr-4 backImgNoti30">
+            <span class="font-weight-normal backTituloNoti33">Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit.
+              Ducimus,
+              ad!</span>
+          </h6>
+          <span class="colorNoti31">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum asperiores pariatur vitae nostrum quia
+            fugit, minima alias quod veritatis repudiandae tempora! Sequi est fuga quis aperiam aspernatur. Quaerat vel
+            iusto quod eveniet rem obcaecati, vitae inventore animi explicabo magnam quas expedita itaque laudantium
+            repellendus praesentium impedit reiciendis dolor id quos libero? Dolores modi dolorem consequatur
+            cupiditate.
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div (click)="mostrarNoticia()" class="container text-center mt-3 cursor7">
+    <ul class="list-unstyled backUltimas28 pt-4 pl-4 pr-4 mt-1 text-justify">
+      <li class="backNoti32 mb-4" data-toggle="tooltip" data-placement="top" title="ABRIR">
+        <div class="media-body">
+          <h6 class="mb-1">
+            <img src="../../../assets/img/1.jpg" class="tamanoYo29 rounded-circle mr-4 backImgNoti30">
+            <span class="font-weight-normal backTituloNoti33">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Ducimus,
+              ad!</span>
+          </h6>
+          <span class="colorNoti31">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum asperiores pariatur vitae nostrum quia
+            fugit, minima alias quod veritatis repudiandae tempora! Sequi est fuga quis aperiam aspernatur. Quaerat vel
+            iusto quod eveniet rem obcaecati, vitae inventore animi explicabo magnam quas expedita itaque laudantium
+            repellendus praesentium impedit reiciendis dolor id quos libero? Dolores modi dolorem consequatur
+            cupiditate.
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div (click)="mostrarNoticia()" class="container text-center mt-3 cursor7">
+    <ul class="list-unstyled backUltimas28 pt-4 pl-4 pr-4 mt-1 text-justify">
+      <li class="backNoti32 mb-4" data-toggle="tooltip" data-placement="top" title="ABRIR">
+        <div class="media-body">
+          <h6 class="mb-1">
+            <img src="../../../assets/img/1.jpg" class="tamanoYo29 rounded-circle mr-4 backImgNoti30">
+            <span class="font-weight-normal backTituloNoti33">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Ducimus,
+              ad!</span>
+          </h6>
+          <span class="colorNoti31">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum asperiores pariatur vitae nostrum quia
+            fugit, minima alias quod veritatis repudiandae tempora! Sequi est fuga quis aperiam aspernatur. Quaerat vel
+            iusto quod eveniet rem obcaecati, vitae inventore animi explicabo magnam quas expedita itaque laudantium
+            repellendus praesentium impedit reiciendis dolor id quos libero? Dolores modi dolorem consequatur
+            cupiditate.
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<app-modals></app-modals>
